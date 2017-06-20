@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "declaration": false,
+    "lib": ["es6", "dom"],
+    "outDir": "./aot",
+    "typeRoots": [
+      "./node_modules/@types"
+    ]
+  },
+
+  "exclude": [
+    "src/main-aot.ts",
+    "tmp",
+    "node_modules/",
+    "e2e",
+    "aot",
+    "dist",
+    "testing"
+  ]
+}
