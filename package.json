@@ -11,7 +11,7 @@
     "clean:dev": "rimraf tmp",
     "clean:prod": "rimraf dist && rimraf aot",
     "clean:aot": "rimraf aot",
-    "lint": "tslint --type-check --project tsconfig.json \"src/**/*.ts\"",
+    "lint": "tslint --type-check --project tsconfig.json \"src/**/*.ts\" --exclude \"src/main-aot.ts\"",
     "test": "karma start",
     "pre-e2e": "webdriver-manager update",
     "e2e": "protractor"
