@@ -12,3 +12,7 @@ TODO
 - [] use starter write a todo mvc demo
 - [] add simple test for starter for good to start
 
+
+#### Notice
+
+1. Before you run e2e test, you should update your webdriver-manager, you can run `npm run pre-e2e`. Because this command is a little slow, so i am not put it as pree2e

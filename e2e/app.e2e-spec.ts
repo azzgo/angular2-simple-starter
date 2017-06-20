@@ -1,14 +1,8 @@
-import { Page } from './app.po';
+import { browser, element, by } from 'protractor';
 
 describe('Page', function() {
-  let page: Page;
-
-  beforeEach(() => {
-    page = new Page();
-  });
-
-  it('should display title WorkSpace', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('WorkSpace');
+  it('document title should be Angular2 Simple Stater', () => {
+    browser.get('');
+    expect(browser.getTitle()).toEqual('Angular2 Simple Stater');
   });
 });
