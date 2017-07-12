@@ -34,7 +34,7 @@ const config: webpack.Configuration = {
           }
         ]
       },
-      { 
+      {
         test: /\.css$/,
         use: [
           'to-string-loader',
@@ -53,7 +53,7 @@ const config: webpack.Configuration = {
           helpers.root('node_modules')
         ]
       },
-      { 
+      {
         test: /\.css$/,
         use: [
           'style-loader',
@@ -97,7 +97,7 @@ const config: webpack.Configuration = {
   resolve: {
     extensions: ['.ts', '.js', '.json'],
     modules: process.env.NODE_ENV === 'prod' ?
-      [ helpers.root('src'), helpers.root('aot/src'), 'node_modules']:
+      [ helpers.root('src'), helpers.root('aot/src'), 'node_modules'] :
       [ helpers.root('src'), 'node_modules']
   },
 
@@ -127,7 +127,7 @@ const config: webpack.Configuration = {
         },
         AppCache: false
       })
-    ]: []
+    ] : []
   ),
 
   node: {

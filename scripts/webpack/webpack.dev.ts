@@ -6,7 +6,7 @@ const baseConfig = require('./webpack.base');
 const helpers = require('./helpers');
 
 const config = {
-  
+
   devtool: 'source-map',
   entry: {
     main: './src/main.ts',
@@ -33,7 +33,7 @@ const config = {
   ],
 
   devServer: {
-    port: 9000,
+    port: process.env.PORT || 9000,
     historyApiFallback: true
   }
 };
