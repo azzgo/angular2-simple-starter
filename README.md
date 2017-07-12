@@ -10,7 +10,6 @@ Yes, @angular/cli is awesome, which is good for start a angular project. But som
 
 TODO
 - [] upgrade webpack to 3
-- [] use starter write a todo mvc demo
 
 
 #### Notice
